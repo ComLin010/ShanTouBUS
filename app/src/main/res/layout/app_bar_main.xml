@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.shantoubus.shantoubus.MainActivity">
+
+   <com.amap.api.maps.MapView
+       android:id="@+id/map"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></com.amap.api.maps.MapView>
 
     <com.arlib.floatingsearchview.FloatingSearchView
         android:id="@+id/floating_search_view"
@@ -17,15 +22,8 @@
         app:floatingSearch_suggestionsListAnimDuration="250"
         app:floatingSearch_showSearchKey="false"
         app:floatingSearch_leftActionMode="showHamburger"
-        app:floatingSearch_close_search_on_keyboard_dismiss="true"
-        android:layout_alignParentBottom="true">
+        app:floatingSearch_close_search_on_keyboard_dismiss="true">
     </com.arlib.floatingsearchview.FloatingSearchView>
-    <com.amap.api.maps2d.MapView
-        android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </com.amap.api.maps2d.MapView>
 
 
-</RelativeLayout>
+</FrameLayout>

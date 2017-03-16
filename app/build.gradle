@@ -4,6 +4,12 @@ android {
     compileSdkVersion 23
     buildToolsVersion '23.0.1'
 
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
     defaultConfig {
         applicationId "com.example.shantoubus.shantoubus"
         minSdkVersion 15
@@ -23,5 +29,6 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.github.arimorty:floatingsearchview:2.0.3'
-    compile files('libs/AMap2DMap_4.2.0_AMapSearch_4.0.0_AMapLocation_3.3.0_20170120.jar')
+    compile files('libs/AMap_Search_V5.0.0_20170309.jar')
+    compile files('libs/Android_Map3D_SDK_V5.0.0_20170311.jar')
 }
